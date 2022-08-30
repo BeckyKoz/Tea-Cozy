@@ -15,3 +15,11 @@ body {
 h1 {
     color: red;
 }
+
+header {
+    border-bottom: 1px solid seashell;
+}
+
+nav li {
+    text-decoration: underline;
+}
