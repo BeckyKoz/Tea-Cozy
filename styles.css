@@ -1,3 +1,5 @@
+/* General Formatting */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +14,89 @@ body {
     text-align: center;
 }
 
+main {
+    position: relative;
+    top: 69px;
+
+}
+
+/* Header formatting */
+
 h1 {
     color: red;
 }
 
 header {
     border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0;
+    height: 69px;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    opacity: 1;
+    background-color: black;
+}
+
+header img {
+    height: 50px;
+    margin: 10px;
+    
+}
+
+nav {
+    height: 69px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav a {
+    color: gray;
+    display: inline-block;
+    text-decoration: underline;
+    text-align: right;
+    margin: auto 10px;
 }
 
 nav li {
-    text-decoration: underline;
+    text-align: right;
+    list-style: none;
+    display: inline-block;
+}
+
+nav a:visited {
     color: gray;
 }
+
+nav a:hover {
+    color: white;
+
+}
+
+nav a:active {
+    color: rgb(63, 116, 70);
+}
+
+
+/* Mission formatting */
+
+section.mission {
+    background-image: url("Resources/img-mission-background.jpg");
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mission div {
+    flex-direction: column;
+    background-color: black;
+    width: 1200px;
+}
+
+/* Tea of the Month formatting */
+
