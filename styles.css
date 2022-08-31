@@ -54,7 +54,7 @@ nav {
 }
 
 nav a {
-    color: gray;
+    color: seashell;
     display: inline-block;
     text-decoration: underline;
     text-align: right;
@@ -68,16 +68,15 @@ nav li {
 }
 
 nav a:visited {
-    color: gray;
+    color: seashell;
 }
 
 nav a:hover {
-    color: white;
-
+    text-decoration: none;
 }
 
 nav a:active {
-    color: rgb(63, 116, 70);
+    color: gray;
 }
 
 
@@ -96,6 +95,12 @@ section.mission {
     flex-direction: column;
     background-color: black;
     width: 1200px;
+}
+
+.mission h2, 
+.mission h4 {
+    margin: 10px;
+    padding: 5px;
 }
 
 /* Tea of the Month formatting */
