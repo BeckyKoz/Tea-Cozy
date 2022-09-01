@@ -26,6 +26,10 @@ h1 {
     color: red;
 }
 
+h2 {
+    font-weight: bolder;
+}
+
 header {
     border-bottom: 1px solid seashell;
     position: fixed;
@@ -85,16 +89,20 @@ nav a:active {
 section.mission {
     background-image: url("Resources/img-mission-background.jpg");
     height: 700px;
+    width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin: 0 auto;
 }
 
-.mission div {
+.mission .banner {
+    width: 100%;
+    /* display: flex;
     flex-direction: column;
+    justify-content: center; */
     background-color: black;
-    width: 1200px;
+    text-align: center;
 }
 
 .mission h2, 
@@ -108,18 +116,26 @@ section.mission {
 /* Tea of the Month formatting */
 
 .month {
-    display: flex;
-    flex-flow: column wrap;
-    width: 1000px;
-    margin: 100px;
+    width: 100%;
+    font-weight: bolder;
+    margin: 100px auto;
 }
 
 .month div.container  {
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    margin: 0px auto;
+}
+
+.month div.container div {
+    margin: 10px;
+}
+
+.month div.container p {
+    margin: 10px;
 
 }
 
@@ -130,43 +146,63 @@ section.mission {
     align-content: space-between;
 }
 
+.month h2 {
+    margin-bottom: 20px;
+}
+
+.month h2+p {
+    margin: 15px;
+}
+
 /* Locations formatting */
 
-.locations {
-    height: 500px;
+section.locations {
+    display: flex;
+    flex-direction: column;
+    height: 575px;
+    width: 1200px;
     background-image: url("Resources/img-locations-background.jpg");
+    justify-content: center;
+    align-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.locations h2 {
+    margin-bottom: 15px;
 }
 
 .locations div.addr {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     height: 300px;
     width: 300px;
-    margin: 15px 40px;
     background-color: black;
     text-align: center;
     flex-direction: column;
 }
 
 div.addr-container {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    width: auto;
+    display: flex;    
+    align-content: center;
+    justify-content: space-around;
+    width: 980px;
+    order: 1;
+    margin: 0 auto;
+
 }
 
 div.addr {
+    display: inline-flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.addr {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-address p {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-around;
+    align-content: space-around;
 }
 
 
@@ -189,4 +225,5 @@ footer {
 .copyright {
     margin: 20px;
     text-align: left;
+    font-size: smaller;
 }
